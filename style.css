@@ -1,0 +1,95 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #0d1117;
+  color: #e6edf3;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+
+.hero { text-align: center; margin-bottom: 40px; }
+
+.hero h1 {
+  font-size: 2.2rem;
+  color: #f5c518;
+  font-weight: 700;
+}
+
+.subtitle { color: #8b949e; margin-top: 8px; margin-bottom: 28px; }
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 30px;
+  padding: 12px 20px;
+  max-width: 500px;
+  margin: 0 auto 30px;
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e6edf3;
+  width: 100%;
+  font-size: 0.95rem;
+}
+
+.search-bar input::placeholder { color: #6e7681; }
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 14px 28px;
+  min-width: 100px;
+}
+
+.stat-number { font-size: 1.5rem; font-weight: 700; color: #f5c518; }
+.stat-label { font-size: 0.8rem; color: #8b949e; margin-top: 4px; }
+
+.movies-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #8b949e;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 18px;
+}
+
+.movie-card {
+  background: #161b22;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #30363d;
+  transition: transform 0.15s ease;
+  cursor: pointer;
+}
+
+.movie-card:hover { transform: translateY(-4px); border-color: #f5c518; }
+
+.movie-card img { width: 100%; display: block; aspect-ratio: 2/3; object-fit: cover; }
+
+.movie-info { padding: 10px 12px; }
+
+.movie-info h3 { font-size: 0.95rem; margin-bottom: 4px; }
+
+.movie-info p { font-size: 0.78rem; color: #8b949e; }
+
+.movie-rating { color: #f5c518; font-size: 0.8rem; margin-top: 6px; }
